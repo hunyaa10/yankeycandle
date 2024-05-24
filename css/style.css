@@ -988,6 +988,11 @@ footer .sns a img{
   }
   /* //sec01 */
 
+  .sec02{
+    padding: 8% 10%;
+  }
+  /* //sec02 */
+
   .sec04{
     padding: 10% 10%;
     display: block;
@@ -1054,6 +1059,9 @@ footer .sns a img{
   }
   /* //sec01 */
 
+  .sec02 .content .con_i .con{
+    padding: 0 1.5%;
+  }
   .sec02 .content .con_i .con .text .title h3{
     font-size: 20px;
   }
