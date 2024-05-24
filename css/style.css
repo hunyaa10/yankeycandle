@@ -1002,9 +1002,6 @@ footer .sns a img{
   .sec04 .content{
     width: 100%;
   }
-  .sec04 .content .con .text h4{
-    font-weight: 500;
-  }
   /* //sec04 */
 
   .sec05 .mark{
@@ -1119,6 +1116,7 @@ footer .sns a img{
   }
   .sec04 .content .con .text h4{
     font-size: 12px;
+    font-weight: 500;
   }
   .sec04 .content .con .text p{
     font-size: 10px;
@@ -1130,6 +1128,7 @@ footer .sns a img{
   }
   .sec05 .disc .text h3{
     font-size: 16px;
+    font-weight: 500;
   }
   .sec05 .disc .text p{
     font-size: 12px;
@@ -1174,6 +1173,9 @@ footer .sns a img{
 }
 
 @media screen and ( max-width:450px ){
+  .sec01 figure{
+    width: 70%;
+  }
   .sec01 .text a{
     padding: 5%;
     font-size: 14px;
