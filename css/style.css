@@ -739,8 +739,8 @@ footer .sns a img{
   /* //banner */
 
   .sec01 figure{
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     opacity: 0.5;
     position: absolute;
     top: 50%;
@@ -1171,9 +1171,6 @@ footer .sns a img{
 }
 
 @media screen and ( max-width:450px ){
-  .sec01 figure{
-    width: 70%;
-  }
   .sec01 .text a{
     padding: 5%;
     font-size: 14px;
