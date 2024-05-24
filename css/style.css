@@ -1002,6 +1002,9 @@ footer .sns a img{
   .sec04 .content{
     width: 100%;
   }
+  .sec04 .content .con .text h4{
+    font-weight: 500;
+  }
   /* //sec04 */
 
   .sec05 .mark{
