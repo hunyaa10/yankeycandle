@@ -30,6 +30,7 @@ header{
   position: fixed;
   top: 0;
   z-index: 999;
+  transition: 0.5s;
 }
 header h1{
   width: 100px;
@@ -313,11 +314,10 @@ nav .btn button:hover{
 
 .sec03{
   width: 100%;
-  height: 90vh;
 }
 .sec03 .m_title{
   width: 100%;
-  height: 10%;
+  height: 8vh;
   padding: 0 12%;
   background-color: #445d5d20;
 }
@@ -346,12 +346,10 @@ nav .btn button:hover{
 }
 .sec03 .content{
   width: 100%;
-  height: 90%;
-  padding: 7% 12%;
+  padding: 10% 12%;
 }
 .sec03 .content .con{
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
@@ -367,21 +365,19 @@ nav .btn button:hover{
 }
 .sec03 .content .con .image{
   width: 30%;
-  height: 100%;
 }
 .sec03 .content .con .image img{
   width: 100%;
-  height: 100%;
   position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 9;
 }
 .sec03 .content .con .text{
   width: 65%;
-  height: 100%;
   letter-spacing: 3px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   overflow: hidden;
 }
 .sec03 .content .con .text .title{
@@ -420,6 +416,7 @@ nav .btn button:hover{
 }
 .sec03 .content .con .text p{
   line-height: 200%;
+  margin: 7% 0;
 }
 .sec03 .content .con .text .perimg{
   width: 160%;
@@ -461,14 +458,13 @@ nav .btn button:hover{
 
 .sec04{
   width: 100%;
-  height: 100vh;
   padding: 5% 12%;
   display: flex;
   justify-content: space-between;
 }
 .sec04 .title{
   width: 20%;
-  height: 60%;
+  height: 35vh;
   padding: 2%;
   background-color: #445D5D;
   color: #fff;
@@ -497,12 +493,10 @@ nav .btn button:hover{
 }
 .sec04 .content{
   width: 77%;
-  height: 100%;
   display: flex;
 }
 .sec04 .content .con{
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -512,6 +506,7 @@ nav .btn button:hover{
 }
 .sec04 .content .con .con_i{
   width: 100%;
+  margin-bottom: 10%;
   padding-top: 1.5rem;
   border-top: 2px solid #445D5D;
 }
@@ -726,13 +721,18 @@ footer .sns a img{
   }
 }
 
-@media screen and ( max-width:1300px ){
+@media screen and ( max-width:1200px ){
+  header{
+    padding: 0 56px;
+  }
   header .menu{
     width: 60%;
   }
   header .login{
     width: 12%;
   }
+  /* //header */
+
   .banner .banner_i{
     width: 30%;
   }
@@ -770,19 +770,16 @@ footer .sns a img{
   }
   /* //sec02 */
 
-  .sec03{
-    height: 80vh;
-  }
   .sec03 .m_title {
-    padding: 0 10%
+    padding: 0 56px
   }
   .sec03 .content {
-    padding: 7% 10%;
+    padding: 10% 56px;
   }
   /* //sec03 */
 
   .sec04{
-    padding: 10% 10%;
+    padding: 10% 56px;
   }
   .sec04 .title .tt h3{
     font-size: 20px;
@@ -793,7 +790,7 @@ footer .sns a img{
   /* //sec04 */
 
   .sec05{
-    padding: 0 10%;
+    padding: 0 56px;
   }
   .sec05 .disc .text p{
     font-size: 14px;
@@ -820,7 +817,7 @@ footer .sns a img{
 
 @media screen and ( max-width:991px ){
   header{
-    padding: 0 5%;
+    padding: 0 40px;
   }
   header .menu, header .login{
     display: none;
@@ -828,13 +825,15 @@ footer .sns a img{
   header .mbar{
     display: block;
   }
+  /* //header */
+
   .banner .banner_i h3{
     font-size: 2.5vw;
   }
   /* //banner */
 
   .sec02{
-    padding: 10% 15%;
+    padding: 10%;
   }
   .sec02 .content .con_i .con{
     flex-direction: column;
@@ -857,27 +856,24 @@ footer .sns a img{
   }
   /* //sec02 */
 
-  .sec03{
-    height: 100vh;
+  .sec03 .m_title {
+    padding: 0 40px
   }
   .sec03 .m_title ul{
     width: 100%;
   }
   .sec03 .content {
-    padding: 7% 10%;
+    padding: 10% 40px;
   }
   .sec03 .content .con{
     flex-direction: column;
     justify-content: center;
   }
   .sec03 .content .con .image{
-    height: 35%;
-    margin: auto;
-    margin-bottom: 2rem;
+    display: none;
   }
   .sec03 .content .con .text{
     width: 100%;
-    justify-content: space-evenly;
   }
   .sec03 .content .con .text .title h3{
     font-size: 25px;
@@ -888,8 +884,7 @@ footer .sns a img{
   /* //sec03 */
 
   .sec04{
-    height: fit-content;
-    padding: 5% 10%;
+    padding: 10% 40px;
   }
   .sec04 .title{
     width: 30%;
@@ -903,7 +898,6 @@ footer .sns a img{
   }
   .sec04 .content .con{
     width: 100%;
-    height: fit-content;
     flex-direction: row;
   }
   .sec04 .content .con02{
@@ -911,12 +905,13 @@ footer .sns a img{
   }
   .sec04 .content .con .con_i{
     width: 48%;
+    margin-bottom: 0;
     padding-top: 1.5rem;
   }
   /* //sec04 */
 
   .sec05{
-    padding: 0 10%;
+    padding: 0 40px;
     flex-direction: column;
     justify-content: center;
   }
@@ -936,7 +931,7 @@ footer .sns a img{
   /* //sec05 */
 
   footer{
-    padding: 5% 10%;
+    padding: 40px;
     flex-direction: column;
     align-items: center;
   }
@@ -974,10 +969,12 @@ footer .sns a img{
   .banner .banner_i h3{
     font-size: 3.5vw;
   }
+  /* //banner */
+
   nav{
     width: 50%;
   }
-  /* //banner */
+  /* //nav */
 
   .sec01 .text h2{
     font-size: 10vw;
@@ -994,18 +991,23 @@ footer .sns a img{
   /* //sec02 */
 
   .sec04{
-    padding: 10% 10%;
+    padding: 0;
     display: block;
   }
   .sec04 .title{
-    width: 40%;
-    margin-bottom: 5%;
+    width: 100%;
+    height: fit-content;
+    padding: 40px;
+  }
+  .sec04 .title .tt h3{
+    margin-bottom: 0;
   }
   .sec04 .title .tt p{
-    margin-bottom: 15%;
+    margin: 1rem 0;
   }
   .sec04 .content{
     width: 100%;
+    padding: 40px;
   }
   /* //sec04 */
 
@@ -1059,9 +1061,6 @@ footer .sns a img{
   }
   /* //sec01 */
 
-  .sec02 .content .con_i .con{
-    padding: 0 1.5%;
-  }
   .sec02 .content .con_i .con .text .title h3{
     font-size: 20px;
   }
@@ -1077,7 +1076,7 @@ footer .sns a img{
     font-size: 14px;
   }
   .sec03 .content {
-    padding: 15% 10%;
+    padding: 10% 40px;
   }
   .sec03 .content .con .text .title h3{
     font-size: 20px;
@@ -1102,9 +1101,6 @@ footer .sns a img{
   }
   /* //sec03 */
 
-  .sec04 .title{
-    width: 48%;
-  }
   .sec04 .title .tt h3{
     font-size: 16px;
   }
@@ -1133,6 +1129,7 @@ footer .sns a img{
 
   .sec05 .mark{
     width: 75%;
+    height: 25%;
   }
   .sec05 .disc .text h3{
     font-size: 16px;
@@ -1181,6 +1178,22 @@ footer .sns a img{
 }
 
 @media screen and ( max-width:450px ){
+  header{
+    padding: 0 16px;
+  }
+  header h1{
+    width: 64px;
+  }
+  header .mbar{
+    width: 24px;
+  }
+  /* //header */
+
+  nav{
+    width: 100%;
+  }
+  /* //nav */
+
   .sec01 figure{
     width: 70%;
   }
@@ -1190,36 +1203,37 @@ footer .sns a img{
   }
   /* //sec01 */
 
-  .sec03{
-    height: 90vh;
+  .sec03 .m_title {
+    padding: 0 16px
+  }
+  .sec03 .content {
+    padding: 56px 16px;
   }
   /* //sec03 */
 
-  .sec04{
-    padding: 0;
-  }
   .sec04 .title{
-    width: 100%;
-    padding: 5% 10%;
-  }
-  .sec04 .title .tt p{
-    margin-bottom: 5%;
+    padding: 16px;
   }
   .sec04 .content{
-    padding: 0 10%;
+    padding: 40px 16px;
   }
   .sec04 .content .con{
     flex-direction: column;
   }
+  .sec04 .content .con02{
+    margin: 0;
+  }
   .sec04 .content .con .con_i{
     width: 100%;
-    margin: 5% 0;
+    margin-bottom: 16px;
   }
   /* //sec04 */
 
+  .sec05{
+    padding: 0 16px;
+  }
   .sec05 .mark{
     width: 80%;
-    height: 20%;
     margin-bottom: 20%;
   }
   /* //sec05 */
@@ -1247,8 +1261,8 @@ footer .sns a img{
   }
   /* //sec02 */
 
-  .sec03 .content {
-    padding: 10% 10%;
+  .sec03 .content .con .text p{
+    margin: 10% 0;
   }
   .sec03 .content .con .text .title h3{
     font-size: 18px;
