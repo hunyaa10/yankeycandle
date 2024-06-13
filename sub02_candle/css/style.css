@@ -399,7 +399,10 @@ footer .sns a img{
   }
 }
 
-@media screen and ( max-width:1300px ){
+@media screen and ( max-width:1200px ){
+  header{
+    padding: 0 56px;
+  }
   header .menu{
     width: 60%;
   }
@@ -408,11 +411,17 @@ footer .sns a img{
   }
   /* //header */
 
+  section .contents{
+    padding: 10% 56px;
+  }
   section #menu{
     grid-template-columns: repeat(4,1fr);
   }
   /* //section */
 
+  footer{
+    padding: 56px;
+  }
   footer .disc .t_text{
     font-size: 14px;
   }
@@ -433,7 +442,7 @@ footer .sns a img{
 
 @media screen and ( max-width:991px ){
   header{
-    padding: 0 5%;
+    padding: 0 40px;
   }
   header .menu, header .login{
     display: none;
@@ -448,6 +457,9 @@ footer .sns a img{
   }
   /* //banner */
 
+  section .contents{
+    padding: 10% 40px;
+  }
   section .contents .text{
     width: 90%;
   }
@@ -466,7 +478,7 @@ footer .sns a img{
   /* //section */
 
   footer{
-    padding: 5% 10%;
+    padding: 40px;
     flex-direction: column;
     align-items: center;
   }
@@ -619,6 +631,22 @@ footer .sns a img{
 }
 
 @media screen and ( max-width:450px ){
+  header{
+    padding: 0 16px;
+  }
+  header h1{
+    width: 64px;
+  }
+  header .mbar{
+    width: 24px;
+  }
+  /* //header */
+
+  nav{
+    width: 100%;
+  }
+  /* //nav */
+
   .banner .bannerT h3{
     font-size: 12px;
   }
@@ -627,6 +655,9 @@ footer .sns a img{
   }
   /* //banner */
 
+  section .contents{
+    padding: 40px 16px;
+  }
   section #menu{
     gap: 0 1.5rem;
   }
@@ -655,4 +686,9 @@ footer .sns a img{
     font-size: 12px;
   }
   /* //nav */
+
+  footer{
+    padding: 24px;
+  }
+  /* //footer */
 }
