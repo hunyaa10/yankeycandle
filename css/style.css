@@ -797,6 +797,9 @@ footer .sns a img{
   }
   /* //sec05 */
 
+  footer{
+    padding: 56px;
+  }
   footer .disc .t_text{
     font-size: 14px;
   }
@@ -1280,4 +1283,9 @@ footer .sns a img{
     font-size: 10px;
   }
   /* //sec05 */
+
+  footer{
+    padding: 24px;
+  }
+  /* //footer */
 }
