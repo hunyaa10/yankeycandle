@@ -120,16 +120,41 @@
     content: url(../img/sec02_캔들/left.svg);
 }
 
+/* ////////////////////////// */
+@media screen and ( max-width:450px ){
+    .slick-prev:before
+    {
+        content: '←';
+        /* content: url(../img/sec02_캔들/left.svg); */
+    }
+    [dir='rtl'] .slick-prev:before
+    {
+        content: '→';
+        /* content: url(../img/sec02_캔들/right.svg); */
+    }
+    .slick-next:before
+{
+    content: '→';
+    /* content: url(../img/sec02_캔들/right.svg); */
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+    /* content: url(../img/sec02_캔들/left.svg); */
+}
+}
+/* ////////////////////////// */
+
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -50px;
 
     display: block;
 
@@ -185,7 +210,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 20px;
     line-height: 20px;
 
     position: absolute;
@@ -209,3 +234,11 @@
     opacity: .75;
     color: black;
 }
+
+/* //////////////////////// */
+@media screen and ( max-width:450px ){
+    .slick-dots{
+        bottom: -25px;
+    }
+}
+/* //////////////////////// */
