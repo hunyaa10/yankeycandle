@@ -347,6 +347,11 @@ footer .disc .b_text .text .text_i span{
   font-weight: 500;
   margin-left: 1rem;
 }
+footer .disc .note{
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
 footer .sns{
   width: 8%;
   height: fit-content;
@@ -391,7 +396,7 @@ footer .sns a img{
   }
 }
 
-@media screen and ( max-width:1200px ){
+@media screen and ( max-width:1300px ){
   header{
     padding: 0 56px;
   }
@@ -444,7 +449,7 @@ footer .sns a img{
   /* //footer */
 }
 
-@media screen and ( max-width:991px ){
+@media screen and ( max-width:1024px ){
   header{
     padding: 0 40px;
   }
@@ -567,6 +572,10 @@ footer .sns a img{
   footer .disc .b_text .text .text_i{
     font-size: 10px;
   }
+  footer .disc .note{
+    margin-top: 2rem;
+    font-size: 16px;
+  }
   /* //footer */
 }
 
@@ -654,6 +663,7 @@ footer .sns a img{
 
 @media screen and ( max-width:450px ){
   header{
+    height: 8vh;
     padding: 0 16px;
   }
   header h1{
@@ -699,6 +709,11 @@ footer .sns a img{
     font-size: 10px;
   }
   /* //section */
+
+  footer .disc .note{
+    font-size: 14px;
+  }
+  /* //footer */
 
   .topbtn button{
     width: 30px;
