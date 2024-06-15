@@ -57,7 +57,10 @@ $(function(){
   })
 
   // sec02 슬릭 좌우슬라이드
-  $('.slide').slick();
+  $('.slide').slick({
+    rows: 1,
+    dots: true
+  });
 
   // sec03 퍼퓸메뉴 선택
   $('.t1').click(function(){
