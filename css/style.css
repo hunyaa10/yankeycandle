@@ -604,7 +604,7 @@ nav .btn button:hover{
 
 footer{
   width: 100%;
-  padding: 5% 7%;
+  padding: 80px 160px;
   background-color: #445D5D;
   font-size: 14px;
   color: #fff;
@@ -613,21 +613,14 @@ footer{
   display: flex;
   justify-content: space-between;
 }
-footer h1{
-  width: 8%;
-}
-footer h1 a{
-  width: 100%;
-}
-footer h1 a img{
-  width: 100%;
+footer h2{
+  width: 100px;
 }
 footer .disc{
   width: 60%;
 }
 footer .disc .t_text{
   width: 100%;
-  margin-bottom: 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -652,6 +645,7 @@ footer .disc .t_text span{
 }
 footer .disc .b_text{
   width: 100%;
+  margin: 50px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -677,21 +671,14 @@ footer .disc .b_text .text .text_i span{
   margin-left: 1rem;
 }
 footer .disc .note{
-  margin-top: 1rem;
   text-align: center;
   font-size: 20px;
 }
 footer .sns{
-  width: 8%;
-  height: fit-content;
   display: flex;
-  justify-content: space-between;
 }
 footer .sns a{
-  width: 25%;
-}
-footer .sns a img{
-  width: 100%;
+  margin: 0 1rem;
 }
 /* //footer */
 
@@ -725,8 +712,14 @@ footer .sns a img{
   }
   /* //sec05 */
 
+  footer{
+    padding: 50px 80px;
+  }
   footer .disc{
     width: 70%;
+  }
+  footer .disc .b_text{
+    margin: 32px 0;
   }
   /* //footer */
 }
@@ -808,7 +801,10 @@ footer .sns a img{
   /* //sec05 */
 
   footer{
-    padding: 56px;
+    padding: 40px 56px;
+  }
+  footer h2{
+    width: 80px;
   }
   footer .disc .t_text{
     font-size: 14px;
@@ -824,6 +820,10 @@ footer .sns a img{
   }
   footer .disc .b_text .text .text_i span{
     margin-left: 0.5rem;
+  }
+  footer .sns a{
+    width: 24px;
+    margin: 0 0.5rem;
   }
   /* //footer */
 }
@@ -952,9 +952,8 @@ footer .sns a img{
     flex-direction: column;
     align-items: center;
   }
-  footer h1{
+  footer h2{
     order: 3;
-    width: 12%;
   }
   footer .disc{
     width: 100%;
@@ -962,8 +961,11 @@ footer .sns a img{
   }
   footer .sns{
     order: 2;
-    width: 15%;
-    margin: 10% 0;
+    margin: 2rem 0;
+  }
+  footer .sns a{
+    width: 32px;
+    margin: 0 1rem;
   }
   /* //footer */
 
@@ -1036,12 +1038,12 @@ footer .sns a img{
     font-size: 12px;
   }
   footer .disc .t_text .t_text_i{
-    width: 70%;
+    width: 80%;
   }
   footer .disc .t_text span{
     height: 10px;
   }
-  footer .disc .t_text .t_hide{
+  footer .disc .t_text .hide{
     display: none;
   }
   footer .disc .b_text .text h5{
@@ -1054,8 +1056,11 @@ footer .sns a img{
     font-size: 10px;
   }
   footer .disc .note{
-    margin-top: 2rem;
     font-size: 16px;
+  }
+  footer .sns a{
+    width: 24px;
+    margin: 0 0.5rem;
   }
   /* //footer */
 }
@@ -1180,7 +1185,7 @@ footer .sns a img{
     align-items: center;
   }
   footer .disc .b_text .bt_i{
-    margin-bottom: 10%;
+    margin-bottom: 24px;
   }
   footer .disc .b_text .text{
     text-align: center;
@@ -1269,6 +1274,9 @@ footer .sns a img{
   }
   /* //sec05 */
 
+  footer{
+    padding: 24px 16px;
+  }
   footer .disc .note{
     font-size: 14px;
   }
@@ -1317,8 +1325,8 @@ footer .sns a img{
   }
   /* //sec05 */
 
-  footer{
-    padding: 24px;
+  footer .disc .note{
+    font-size: 12px;
   }
   /* //footer */
 }
